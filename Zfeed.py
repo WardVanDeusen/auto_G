@@ -1,7 +1,6 @@
-#!/usr/bin/env/python3
-
+#! python3
+import sys
 import os
-os.system('clear')
 
 # constant
 zZero = float(0)
