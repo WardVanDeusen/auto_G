@@ -1,6 +1,4 @@
 #! python3
-import sys
-import os
 
 # constant
 zZero = float(0)
