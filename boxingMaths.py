@@ -1,22 +1,25 @@
 #! python3
-import Xfeed as xfeed
-import Zfeed as zfeed
+import Xfeed
+import Zfeed
+
+myX = Xfeed.X()
+myZ = Zfeed.Z()
 
 
 class Box:
     def __init__(self):
-        """comment"""
+        """boxing cuts for blanking stock"""
 
 #       X-axis movement
-        self.myCutDepth = xfeed.myCutDepth
-        self.myRoughStock = xfeed.myRoughStock
-        self.myPartDiameter = xfeed.myPartDiameter
+        self.myCutDepth = myX.myCutDepth
+        self.myRoughStock = myX.myRoughStock
+        self.myPartDiameter = myX.myPartDiameter
         self.xCuts = (self.myCutDepth /
                       (self.myRoughStock - self.myPartDiameter))
 
 #       Z-axis movement
-        self.zZero = zfeed.zZero
-        self.myPartLength = zfeed.myPartLength
+        self.zZero = myZ.zZero
+        self.myPartLength = myZ.myPartLength
 
 
 Box()

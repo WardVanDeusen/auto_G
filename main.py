@@ -1,10 +1,7 @@
-#! python3
-import os
-import sys
-import loop
+# import loop
 import loopToFile
 
+# myLoop = loop.Boxing()
+myLoopToFile = loopToFile.BoxingToFile()
 
-
-
-
+myLoopToFile

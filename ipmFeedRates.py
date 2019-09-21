@@ -1,8 +1,7 @@
-#! python3
 
 
 class IpmFeedRates:
-    """for holding all things feedrate"""
+    """all things feedrate"""
 
     def __init__(self):
 
