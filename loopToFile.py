@@ -7,7 +7,7 @@ myIpm = ipmFeedRates.IpmFeedRates()
 
 
 class BoxingToFile:
-    """for holding all things X coordinates"""
+    """create .nc file"""
 
     def __init__(self):
 

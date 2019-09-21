@@ -8,7 +8,7 @@ myZ = Zfeed.Z()
 
 class Box:
     def __init__(self):
-        """boxing cuts for blanking stock"""
+        """boxing cuts for blanking part diameters"""
 
 #       X-axis movement
         self.myCutDepth = myX.myCutDepth

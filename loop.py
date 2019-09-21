@@ -6,7 +6,7 @@ myIpm = ipmFeedRates.IpmFeedRates()
 
 
 class Boxing:
-    """for holding all things X coordinates"""
+    """blanking part diameters"""
 
     def __init__(self):
 

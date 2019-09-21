@@ -1,7 +1,7 @@
 
 
 class Z:
-    """for holding all things X coordinates"""
+    """for holding all things Z coordinates"""
 
     def __init__(self):
 
