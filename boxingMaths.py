@@ -17,12 +17,7 @@ class Box:
 #       Z-axis movement
         self.zZero = zfeed.zZero
         self.myPartLength = zfeed.myPartLength
-        return
 
 
 Box()
 box = Box()
-
-
-#       Test
-#  print(box.myRoughStock)
