@@ -20,4 +20,3 @@ class Box:
 
 
 Box()
-box = Box()
