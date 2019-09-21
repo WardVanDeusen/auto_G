@@ -4,7 +4,7 @@ import Zfeed as zfeed
 
 
 class Box:
-    def __init__(self, xfeed, zfeed):
+    def __init__(self):
         """comment"""
 
 #       X-axis movement
@@ -20,8 +20,8 @@ class Box:
         return
 
 
-Box(xfeed, zfeed)
-box = Box(xfeed, zfeed)
+Box()
+box = Box()
 
 
 #       Test

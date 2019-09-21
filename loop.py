@@ -1,7 +1,7 @@
 import boxingMaths
 import ipmFeedRates
 
-myBox = boxingMaths.Box(boxingMaths.xfeed, boxingMaths.zfeed)
+myBox = boxingMaths.Box()
 
 rapidCode = ipmFeedRates.rapidCode
 linearCode = ipmFeedRates.linearCode
