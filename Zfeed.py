@@ -1,6 +1,4 @@
-
-
-class Z:
+class _Z:
     """for holding all things Z coordinates"""
 
     def __init__(self):
@@ -9,4 +7,8 @@ class Z:
         self.zZero = float(0)
 
         # Input
-        self.myPartLength = float(input('Enter the part length. '))
+        self._z_in = (float(input('Enter a Z-feed to cut engagement distance. ')))
+        self.myPartLength = float(input('Enter the Z-axis major OD cut length. ')) * -1
+
+
+_z = _Z()
