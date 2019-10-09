@@ -1,5 +1,7 @@
-from Xfeed import _x as myX
-from Zfeed import _z as myZ
+from new_project.project.package import Zfeed, Xfeed
+
+myX = Xfeed._X()
+myZ = Zfeed._Z()
 
 
 class Box(object):
@@ -21,4 +23,5 @@ class Box(object):
         self._z_in = myZ._z_in
 
 
-_box = Box()
+if __name__ == '__main__':
+    _box = Box()

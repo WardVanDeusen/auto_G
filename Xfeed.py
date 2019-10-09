@@ -9,4 +9,5 @@ class _X(object):
         self._x_in = (float(input('Enter a X-feed to cut engagement distance. ')) + self.myRoughStock)
 
 
-_x = _X()
+if __name__ == '__main__':
+    _x = _X()

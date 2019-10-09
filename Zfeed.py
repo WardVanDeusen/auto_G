@@ -11,4 +11,5 @@ class _Z:
         self.myPartLength = float(input('Enter the Z-axis major OD cut length. ')) * -1
 
 
-_z = _Z()
+if __name__ == '__main__':
+    _z = _Z()

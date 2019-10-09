@@ -1,27 +1,28 @@
-from boxingMaths import _box as myBox
-from ipmFeedRates import _ipm as myIpm
-from clearScreen import clear
+from new_project.project.package import boxingMaths, ipmFeedRates
 
-_clear = clear
+myBox = boxingMaths.Box()
+var_rapidCode = ipmFeedRates._ipm.rapidCode
+var_linearCode = ipmFeedRates._ipm.linearCode
+var_linearFeed = ipmFeedRates._ipm.linearFeed
+var_rapidFeed = ipmFeedRates._ipm.rapidFeed
 
 
 class Boxing(object):
     """blanking part diameters"""
 
     def __init__(self):
-
         """G-Code"""
         while myBox.myRoughStock > myBox.myPartDiameter:
-            print(myIpm.rapidCode, 'X', myBox._x_in, 'Z'"%0.4f" %
+            print(var_rapidCode, 'X', myBox._x_in, 'Z'"%0.4f" %
                   myBox._z_in)
-            print(myIpm.linearCode, 'X'"%0.4f" % myBox.myRoughStock,
-                  'Z'"%0.4f" % myBox.zZero, 'F'"%0.1f" % myIpm.linearFeed)
+            print(var_linearCode, 'X'"%0.4f" % myBox.myRoughStock,
+                  'Z'"%0.4f" % myBox.zZero, 'F'"%0.1f" % var_linearFeed)
 
             myBox.myRoughStock = myBox.myRoughStock - myBox.myCutDepth
 
             print('X', "%0.4f" % myBox.myRoughStock,
                   'Z'"%0.4f" % myBox.myPartLength,
-                  'F'"%0.1f" % myIpm.linearFeed)
+                  'F'"%0.1f" % var_linearFeed)
 
 
 _B = Boxing()
