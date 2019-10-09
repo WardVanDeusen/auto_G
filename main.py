@@ -1,7 +1,7 @@
-# import loop
 import loopToFile
+import loop
+import _lines
 
-# myLoop = loop.Boxing()
-myLoopToFile = loopToFile.BoxingToFile()
-
-myLoopToFile
+_l = loop.Boxing()
+_L2f = loopToFile.BoxingToFile()
+_lines = _lines.__lines()

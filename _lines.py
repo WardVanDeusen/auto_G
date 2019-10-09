@@ -1,6 +1,6 @@
 import turtle
 
-from new_project.project.package import boxingMaths
+import boxingMaths
 
 
 def __lines():

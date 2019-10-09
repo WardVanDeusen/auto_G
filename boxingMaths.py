@@ -1,4 +1,5 @@
-from new_project.project.package import Zfeed, Xfeed
+import Zfeed
+import Xfeed
 
 myX = Xfeed._X()
 myZ = Zfeed._Z()

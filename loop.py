@@ -1,4 +1,5 @@
-from new_project.project.package import boxingMaths, ipmFeedRates
+import boxingMaths
+import ipmFeedRates
 
 myBox = boxingMaths.Box()
 var_rapidCode = ipmFeedRates._ipm.rapidCode
