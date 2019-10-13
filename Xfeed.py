@@ -10,4 +10,12 @@ class _X(object):
 
 
 if __name__ == '__main__':
-    _x = _X()
+
+        print('XfeedOK')
+
+else:
+        _x = _X()
+        _x_roughstock = _x.myRoughStock
+        x_part_diameter = _x.myPartDiameter
+        _x_cut_depth = _x.myCutDepth
+        _x_in = _x._x_in
