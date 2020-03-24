@@ -15,7 +15,7 @@ class Boxing(object):
         """G-Code"""
         while myBox.myRoughStock > myBox.myPartDiameter:
             print(var_rapidCode, 'X', myBox._x_in, 'Z'"%0.4f" %
-                  myBox._z_in)
+                  myBox._z_in, 'F'"%0.1f " % var_rapidFeed)
             print(var_linearCode, 'X'"%0.4f" % myBox.myRoughStock,
                   'Z'"%0.4f" % myBox.zZero, 'F'"%0.1f" % var_linearFeed)
 

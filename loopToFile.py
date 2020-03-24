@@ -21,10 +21,12 @@ class BoxingToFile(object):
                 f.write(var_rapidCode)
                 f.write(' X'"%0.4f" % myBox._x_in)
                 f.write(' Z'"%0.4f" % myBox._z_in)
+                f.write(' F'"%0.1f" % var_rapidFeed)
                 f.write('\n')
                 f.write(var_linearCode)
                 f.write(' X'"%0.4f" % myBox.myRoughStock)
                 f.write(' Z'"%0.4f" % myBox.zZero)
+                f.write(' F'"%0.1f" % var_linearFeed)
                 f.write('\n')
 
                 myBox.myRoughStock = myBox.myRoughStock - myBox.myCutDepth
@@ -33,4 +35,3 @@ class BoxingToFile(object):
                 f.write(' Z'"%0.4f" % myBox.myPartLength)
                 f.write(' F'"%0.1f" % var_linearFeed)
                 f.write('\n')
-
